@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../Library/Android/sdk/platforms/android-32/data/res/drawable/progress_horizontal.xml" value="0.199" />
+        <entry key="../../../../Library/Android/sdk/platforms/android-32/data/res/drawable/progress_indeterminate_horizontal.xml" value="0.177" />
+        <entry key="app/src/main/res/drawable-v24/bg_selectedweek.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bg_blockto_loginbg.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bg_blockto_loginbg_white.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bg_bottom_nav_bar.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bg_category.xml" value="0.1805" />
+        <entry key="app/src/main/res/drawable/bg_category_selected.xml" value="0.1805" />
+        <entry key="app/src/main/res/drawable/bg_countbg.xml" value="0.1695" />
+        <entry key="app/src/main/res/drawable/bg_event_bottombg.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bg_otpedittext.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bg_otpedittext_selected.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bg_profile_level.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bg_reward.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bg_rounded_bottom_sheet.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bg_selectedweek.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bg_strick.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bg_strick_selected.xml" value="0.1695" />
+        <entry key="app/src/main/res/drawable/bg_timebg.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bg_timesaver.xml" value="0.1695" />
+        <entry key="app/src/main/res/drawable/bg_viewmore_text.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bg_watchtoearn.xml" value="0.1695" />
+        <entry key="app/src/main/res/drawable/bg_week_day.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bgcorner_img.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/botom_viewbg.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/bt_login.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/challange_bt.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/circule_blueselected.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/circule_non_selected.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/coupen_bg.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/ic_app_iconimg.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_baseline_remove_red_eye_24.xml" value="0.1695" />
+        <entry key="app/src/main/res/drawable/ic_bg_gradient.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_blocto.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_blocto_logo.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_down_red_arrow.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_home_click.xml" value="0.1805" />
+        <entry key="app/src/main/res/drawable/ic_home_grey.xml" value="0.1805" />
+        <entry key="app/src/main/res/drawable/ic_iconly_bold_star.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_left_arrow_light.xml" value="0.1695" />
+        <entry key="app/src/main/res/drawable/ic_token_logo.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/ic_vuesax_bulk_crown.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_vuesax_bulk_flash_circle.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_vuesax_bulk_ticket.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_wallet.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/ic_x.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_x_logo.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/kotak_edit_text_otp.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/progressdrawable.xml" value="0.198" />
+        <entry key="app/src/main/res/drawable/red_lowstock.xml" value="0.1805" />
+        <entry key="app/src/main/res/drawable/redeem_bt.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/selected_dot.xml" value="0.1755" />
+        <entry key="app/src/main/res/drawable/splash_back_gradiant.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/sponser_bg.xml" value="0.233" />
+        <entry key="app/src/main/res/drawable/tab_selector.xml" value="0.1755" />
+        <entry key="app/src/main/res/drawable/timeleft_sponserbg.xml" value="0.233" />
+        <entry key="app/src/main/res/drawable/viewmore_text.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/wallet.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/wallet_bg.xml" value="0.172" />
+        <entry key="app/src/main/res/layout-land/fragment_twitchdetail.xml" value="0.12938596491228072" />
+        <entry key="app/src/main/res/layout/activity_chooselogin.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/activity_dob.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/activity_editprofile.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/activity_eventdetail.xml" value="0.18368167202572347" />
+        <entry key="app/src/main/res/layout/activity_introscreen.xml" value="0.14844136566056407" />
+        <entry key="app/src/main/res/layout/activity_ledger.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/activity_maindashboard.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/activity_memberprofile.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/activity_name.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/activity_phone_no_auth.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/activity_phoneno_auth.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/activity_phoneno_verification.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/activity_shopdetail.xml" value="0.18368167202572347" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/activity_viewmore.xml" value="0.21614583333333334" />
+        <entry key="app/src/main/res/layout/activity_wallet.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/botomsheet_login.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/calender_view.xml" value="0.19956140350877194" />
+        <entry key="app/src/main/res/layout/edittext_otp.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/fragment_chooselogin.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/fragment_dob.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/fragment_editprofile.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/fragment_event.xml" value="0.21315298507462688" />
+        <entry key="app/src/main/res/layout/fragment_eventdetail.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/fragment_eventpromocode.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/fragment_ledger.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/fragment_memberprofile.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/fragment_members.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/fragment_offerdetail.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/fragment_offerpromocode.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/fragment_phoneno_verification.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/fragment_profilelevel.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/fragment_shop.xml" value="0.18994181213632585" />
+        <entry key="app/src/main/res/layout/fragment_sponser_ads.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/fragment_twitchdetail.xml" value="0.25757575757575757" />
+        <entry key="app/src/main/res/layout/fragment_viewmore.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/fragment_wallet.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/intro_item.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/item_appviadata.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/item_dailyreward.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/item_event.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/item_eventsponsor.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/item_graph.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/item_imageview.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/item_intro.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/item_members.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/item_offercategory.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/item_offers.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_preminum.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/item_signupmember.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/item_sponser_ads.xml" value="0.20043859649122808" />
+        <entry key="app/src/main/res/layout/item_toptimesaver.xml" value="0.21614583333333334" />
+        <entry key="app/src/main/res/layout/item_transection.xml" value="0.1852995676343422" />
+        <entry key="app/src/main/res/layout/item_twitch.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_upcomingevents.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/item_week_streak.xml" value="0.2171875" />
+        <entry key="app/src/main/res/layout/laoding_state.xml" value="0.11491228070175438" />
+        <entry key="app/src/main/res/layout/marker.xml" value="0.19956140350877194" />
+        <entry key="app/src/main/res/xml/network_security_config.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1644867221561633" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

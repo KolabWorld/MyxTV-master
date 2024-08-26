@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/constraintlay"
+        android:background="@drawable/bg_category"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_cat"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:text="BEAUTY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+            android:drawablePadding="@dimen/_5sdp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

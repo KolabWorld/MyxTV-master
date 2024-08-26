@@ -1,0 +1,1 @@
+sass --watch "D:\Dropbox\Shahnewaz\B2B MarketPlace TF\B2B MarketPlace\assets\scss\main.scss":"D:\Dropbox\Shahnewaz\B2B MarketPlace TF\B2B MarketPlace\assets\css\style.css"

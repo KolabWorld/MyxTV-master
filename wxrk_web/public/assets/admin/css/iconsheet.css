@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'newdashicon';
+  src:  url('../fonts/newdashicon.eot?3y483');
+  src:  url('../fonts/newdashicon.eot?3y483#iefix') format('embedded-opentype'),
+    url('../fonts/newdashicon.ttf?3y483') format('truetype'),
+    url('../fonts/newdashicon.woff?3y483') format('woff'),
+    url('../fonts/newdashicon.svg?3y483#newdashicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'newdashicon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bookiings:before {
+  content: "\e900";
+  
+}
+.icon-customers:before {
+  content: "\e901";
+  
+}
+.icon-custom-quotes:before {
+  content: "\e902";
+  
+}
+.icon-dashboard:before {
+  content: "\e903";
+  
+}
+.icon-general:before {
+  content: "\e904";
+  
+}
+.icon-masters:before {
+  content: "\e905";
+  
+}
+.icon-promo:before {
+  content: "\e906";
+  
+}
+.icon-referals:before {
+  content: "\e907";
+  
+}
+.icon-support:before {
+  content: "\e908";
+  
+}
+.icon-workshops:before {
+  content: "\e909";
+  
+} 

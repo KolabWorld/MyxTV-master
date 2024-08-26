@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:background="@drawable/splash_back_gradiant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                app:layout_constraintTop_toTopOf="@+id/ll_wallet"
+                app:layout_constraintBottom_toBottomOf="@+id/ll_wallet"
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/ic_left_backarrow" />
+
+            <TextView
+                android:id="@+id/tv_text"
+                app:layout_constraintLeft_toRightOf="@+id/iv_back"
+                app:layout_constraintTop_toTopOf="@+id/ll_wallet"
+                app:layout_constraintBottom_toBottomOf="@+id/ll_wallet"
+                android:letterSpacing="-0.01"
+                android:textColor="@color/text_lightwhite"
+                android:textSize="@dimen/_28ssp"
+                android:text="@string/profile"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aquawax_pro_heavy_alt_version" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/ll_wallet"
+                android:gravity="center"
+                android:background="@drawable/wallet_bg"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+                    app:roundPercent="1"
+                    android:background="#0E326C"
+                    android:src="@drawable/ic_token_logo"
+                    android:id="@+id/iv_logo"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp" />
+
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:fontFamily="@font/dubai_dubstep"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@id/iv_user"
+                    app:layout_constraintLeft_toRightOf="@id/iv_user"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp"
+                    android:text="0.00"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_wallet"
+
+                android:id="@+id/rl_profile"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_170sdp"
+                    android:layout_centerInParent="true"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/profile_animation_large" />
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+                    android:id="@+id/iv_user"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    app:roundPercent="1"
+                    app:srcCompat="@drawable/intro_x" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rl_profile"
+                android:id="@+id/tv_editProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_selectedweek"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                android:letterSpacing="-0.05"
+                android:paddingLeft="@dimen/_16sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:paddingBottom="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textAllCaps="true"
+                android:text="@string/editProfile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:textColor="@color/textwhite_light"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/aquawax_pro_medium_alt_version"
+                android:textSize="@dimen/_12sdp"
+                android:text="@string/your_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_editProfile"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                />
+
+            <TextView
+                android:id="@+id/tv_name_tx"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:fontFamily="@font/aquawax_pro_medium_alt_version"
+                android:textSize="@dimen/_12sdp"
+                android:text="John Smith"
+                app:layout_constraintTop_toBottomOf="@+id/tv_editProfile"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <View
+                android:background="#1AFFFFFF"
+                android:id="@+id/view_name"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/tv_phonenumber"
+                android:textColor="@color/textwhite_light"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/aquawax_pro_medium_alt_version"
+                android:textSize="@dimen/_12sdp"
+                android:text="@string/your_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/view_name"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                />
+
+            <TextView
+                android:id="@+id/tv_phonenumber_tx"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:fontFamily="@font/aquawax_pro_medium_alt_version"
+                android:textSize="@dimen/_12sdp"
+                android:text="0911234567890"
+                app:layout_constraintTop_toBottomOf="@+id/view_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <View
+                android:background="#1AFFFFFF"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/view_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/tv_phonenumber"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tv_dob"
+                android:textColor="@color/textwhite_light"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/aquawax_pro_medium_alt_version"
+                android:textSize="@dimen/_12sdp"
+                android:text="@string/youremail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/view_phonenumber"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                />
+
+            <TextView
+                android:id="@+id/tv_dob_tx"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:fontFamily="@font/aquawax_pro_medium_alt_version"
+                android:textSize="@dimen/_12sdp"
+                android:text=""
+                app:layout_constraintTop_toBottomOf="@+id/view_phonenumber"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <View
+                android:background="#1AFFFFFF"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/view_dob"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dob"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+               />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:background="@drawable/splash_back_gradiant"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/ll_wallet"
+                app:layout_constraintBottom_toBottomOf="@id/ll_wallet"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:letterSpacing="-0.01"
+                android:textColor="@color/text_lightwhite"
+                android:textSize="@dimen/_25ssp"
+                android:text="MEMBERS"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aquawax_pro_heavy_alt_version" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_wallet"
+
+                android:gravity="center"
+                android:background="@drawable/wallet_bg"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+                    app:roundPercent="1"
+
+                    android:background="#0E326C"
+                    android:src="@drawable/ic_token_logo"
+                    android:id="@+id/iv_logo"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp" />
+
+
+                <TextView
+                    android:id="@+id/tvBalance"
+                    android:fontFamily="@font/dubai_dubstep"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@id/iv_user"
+                    app:layout_constraintLeft_toRightOf="@id/iv_user"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp"
+                    android:text="0.00"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_category"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintTop_toBottomOf="@id/ll_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_members"
+                app:layout_constraintTop_toBottomOf="@id/rv_category"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:letterSpacing="-0.01"
+                android:textColor="#2DBBDD"
+                android:textSize="@dimen/_14ssp"
+                android:text="TOP 10 IN FRESHMAN"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aquawax_pro_heavy_alt_version" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_offers"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_members"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_members"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

@@ -1,0 +1,228 @@
+
+.sizeArea {
+    margin: 15px 0 0 0;
+}
+
+.sizehead {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sizeArea ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sizeArea li {
+    list-style: none;
+    display: inline;
+}
+
+.sizeArea li a {
+    padding-bottom: 5px;
+    margin: 0 8px;
+    font-size: 16px;
+}
+
+.sizeArea li a:hover {
+    border-bottom: 0.5px solid #777777;
+}
+
+.sizeArea li.active a {
+    border-bottom: 0.5px solid #777777;
+}
+/**************************/
+/* Radio Buttons CSS only */
+/**************************/
+
+.chooseSize {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.customizeSize {
+    padding-top: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.customizeSize label {
+    font-size: 14px;
+}
+
+.chooseSize input[type=radio] {
+    display: none;
+}
+
+.chooseSize input[type=radio]+label.btn {
+    padding: 5px 0px;
+    margin: 5px 22px 5px 3px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 400;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #ffffff;
+    color: #333333;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    min-width: auto;
+    font-size: 13px !important;
+}
+
+.chooseSize input[type=radio]+label.btn:hover {
+    box-shadow: 0 1px #7777778a;
+}
+
+.chooseSize input[type=radio]:checked+label.btn {
+    box-shadow: 0 1px #7777778a;
+}
+/* The custom chekbox */
+
+.logCheck {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+
+.logCheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+}
+/* On mouse-over, add a grey background color */
+
+.logCheck:hover input~.checkmark {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+
+.logCheck input:checked~.checkmark {
+    background-color: #333333;
+    border: 1px solid #333333;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.cart-number { margin-top: 10px; }
+.cartminus, .cartplus{ width:22px; color: #333333; display: inline-block; text-align: center;   cursor: pointer; font-size: 14px; font-weight: bold;   }
+.cart-number input{ font-family: 'Playfair Display', serif !important; outline: none; height:22px; width: 20px; text-align: center; font-size: 14px; border:1px solid #fff;     border-radius:0px; display: inline-block;  color: #333333; }
+.cartminus:hover, .cartplus:hover { background: #fff; }
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+
+.logCheck input:checked~.checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+
+.logCheck .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*** Fabric Choose ****/
+
+.fabStyle {
+    margin: 10px 0;
+}
+
+.fabStyle ul {
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+.fabStyle li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.fabStyle li a {
+    padding-bottom: 2px;
+    margin: 0px 8px;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    color: #999999;
+}
+
+.fabStyle li a span {
+    object-fit: cover;
+    display: block;
+}
+
+.fabStyle li a span img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin-bottom: 8px;
+}
+
+.fabStyle li a:hover {
+    border-bottom: 0.5px solid #333;
+    color: #333;
+}
+
+.fabStyle li a:hover span img {
+    border: 1px solid #777777;
+}
+
+.fabStyle li.active a {
+    border-bottom: 0.5px solid #333;
+    color: #333;
+}
+
+.fabStyle li.active a span img {
+    border: 1px solid #777777;
+}
+
+.productdetalchang .fabStyle li {
+    padding-bottom: 2px;
+    margin: 0px; 
+    text-align: center;
+    display: inline-block; 
+}

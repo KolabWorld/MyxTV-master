@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<button onclick="playVid()" type="button">Play Video</button>
+<button onclick="pauseVid()" type="button">Pause Video</button><br> 
+
+
+
+<div id="twitch-feed"></div>
+<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+<script type="text/javascript">
+var options = {
+width: "100%",
+height: 220,
+video: "1461427292",
+controls: false,
+allowfullscreen: false
+};
+var player = new Twitch.Player("twitch-feed", options);
+player.setVideo("1461427292")
+//player.pause();
+function pauseVid() { 
+  player.pause(); 
+} 
+function playVid() {
+    player.play();
+}
+</script>
+
+<p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+
+</body> 
+</html>

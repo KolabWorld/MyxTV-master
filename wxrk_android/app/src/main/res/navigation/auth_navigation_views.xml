@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/chooselogin_fragment"
+    android:id="@+id/navigation_views">
+
+    <fragment
+        android:id="@+id/chooselogin_fragment"
+        android:name="com.wxrk.ui.fragment.auth.ChooseLogin_Fragment"
+        android:label="ChooseLogin"
+        tools:layout="@layout/fragment_chooselogin" >
+
+        <action
+            android:id="@+id/chooslogin_to_offerdetail"
+            app:destination="@id/phoneno_fragment"
+
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/phoneno_fragment"
+        android:name="com.wxrk.ui.fragment.auth.MobileNo_Fragment"
+        android:label="PhoneNumber"
+        tools:layout="@layout/activity_phoneno_auth" >
+
+        <action
+            android:id="@+id/mobileno_to_otpverification"
+            app:destination="@id/otpverification_fragment"
+
+            />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/otpverification_fragment"
+        android:name="com.wxrk.ui.fragment.auth.MobileVerification_Fragment"
+        android:label="OTPVerification"
+        tools:layout="@layout/fragment_phoneno_verification" >
+
+        <action
+            android:id="@+id/otpverification_to_name"
+            app:destination="@id/name_fragment"
+
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/name_fragment"
+        android:name="com.wxrk.ui.fragment.auth.Name_Fragment"
+        android:label="Name"
+        tools:layout="@layout/activity_name" >
+
+        <action
+            android:id="@+id/name_to_dob"
+            app:destination="@id/dob_fragment"
+
+            />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/dob_fragment"
+        android:name="com.wxrk.ui.fragment.auth.DOB_Fragment"
+        android:label="Name"
+        tools:layout="@layout/fragment_dob" >
+
+    </fragment>
+
+
+
+
+
+
+</navigation>

@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'sur';
+    src: url('../fonts/sur.eot?ivkod0');
+    src: url('../fonts/sur.eot?ivkod0#iefix') format('embedded-opentype'), url('../fonts/sur.ttf?ivkod0') format('truetype'), url('../fonts/sur.woff?ivkod0') format('woff'), url('../fonts/sur.svg?ivkod0#sur') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+  font-family: 'newdashicon';
+  src:  url('../fonts/newdashicon.eot?giu7ez');
+  src:  url('../fonts/newdashicon.eot?giu7ez#iefix') format('embedded-opentype'),
+    url('../fonts/newdashicon.ttf?giu7ez') format('truetype'),
+    url('../fonts/newdashicon.woff?giu7ez') format('woff'),
+    url('../fonts/newdashicon.svg?giu7ez#newdashicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.surnew {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'newdashicon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sur {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'sur' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sur-Refund:before {
+    content: "\e90a";
+}
+
+.sur-Packaging:before {
+    content: "\e90b";
+}
+
+.sur-Support:before {
+    content: "\e90c";
+}
+
+.sur-Made:before {
+    content: "\e90d";
+}
+
+.sur-Payout:before {
+    content: "\e900";
+}
+
+.sur-Dashboard:before {
+    content: "\e901";
+}
+
+.sur-Export:before {
+    content: "\e902";
+}
+
+.sur-Designers:before {
+    content: "\e903";
+}
+
+.sur-Appointments:before {
+    content: "\e904";
+}
+
+.sur-Customers:before {
+    content: "\e905";
+}
+
+.sur-Discounts:before {
+    content: "\e906";
+}
+
+.sur-Offers:before {
+    content: "\e907";
+}
+
+.sur-Orders:before {
+    content: "\e908";
+}
+
+.sur-Products:before {
+    content: "\e909";
+}
+
+
+.icon-Ambasadors:before {
+  content: "\e900";
+}
+.icon-Home:before {
+  content: "\e901";
+}

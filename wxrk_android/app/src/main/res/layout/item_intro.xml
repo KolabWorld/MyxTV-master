@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/splash_back_gradiant"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_50sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/intro_x"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_frontimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/intro_one_frontimg"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RelativeLayout
+                android:visibility="invisible"
+                android:id="@+id/rl_lay"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_bottom_nav_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/ic_token_logo" />
+
+                <TextView
+                    android:letterSpacing="-0.01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                    android:text="$CX. = WORK Get it?"
+                    android:textColor="#2DBBDD"
+                    android:textSize="@dimen/_14ssp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:background="@drawable/circule_blueselected"/>
+             <View
+                 android:id="@+id/view2"
+                 android:layout_marginLeft="@dimen/_5sdp"
+                 android:layout_marginRight="@dimen/_5sdp"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:background="@drawable/circule_non_selected"/>
+             <View
+                 android:id="@+id/view3"
+                 android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:background="@drawable/circule_non_selected"/>
+        </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="0.01">
+        <View
+            android:layout_centerVertical="true"
+            android:id="@+id/view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:background="@drawable/bg_profile_level"/>
+
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/bg_selectedweek"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+        android:letterSpacing="-0.05"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:text="@string/skip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+
+</RelativeLayout>
+
+        <TextView
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:id="@+id/tv_tital"
+            android:textColor="@color/text_lightwhite"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+            android:textSize="@dimen/_28sdp"
+            android:text="@string/cxmmunity"
+            app:layout_constraintTop_toBottomOf="@id/tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:minLines="4"
+            android:id="@+id/tv_des"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:letterSpacing="-0.11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intro2"
+            android:textColor="@color/white"
+            android:gravity="left"
+            android:fontFamily="@font/aquawax_pro_regular_alt_version"
+            android:textSize="@dimen/_15ssp" />
+
+
+    </LinearLayout>
+</layout>

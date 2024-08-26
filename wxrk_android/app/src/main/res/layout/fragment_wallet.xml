@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/splash_back_gradiant"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_above="@+id/rl_transection"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_left_backarrow" />
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_selectedweek"
+            android:id="@+id/ll_howtoearn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_flash_circle"/>
+
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_7sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:id="@+id/tv_viewmore"
+                app:layout_constraintTop_toBottomOf="@id/tv_hours"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:text="HOW TO EARN"
+                android:letterSpacing="-0.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                android:drawablePadding="@dimen/_5sdp" />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:letterSpacing="-0.01"
+            android:textColor="@color/text_lightwhite"
+            android:textSize="@dimen/_70ssp"
+            android:text="0.001"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aquawax_pro_regular_alt_version" />
+
+
+        <ImageView
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="-160dp"
+            android:layout_gravity="right"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/light_coin_logo"/>
+
+        <TextView
+            android:letterSpacing="-0.01"
+            android:textColor="@color/text_lightwhite"
+            android:textSize="@dimen/_14ssp"
+            android:text="YOUR BALANCE"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aquawax_pro_heavy_alt_version" />
+
+        <TextView
+            android:letterSpacing="-0.01"
+            android:textColor="#4dFDFDFD"
+            android:textSize="@dimen/_10ssp"
+            android:text="in $CX. token"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aquawax_pro_medium_alt_version" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="#1AFFFFFF" />
+
+        <TextView
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:letterSpacing="-0.01"
+            android:textColor="#2DBBDD"
+            android:textSize="@dimen/_14ssp"
+            android:text="LAST 5 TRANSACTIONS"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aquawax_pro_heavy_alt_version" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:id="@+id/rv_transection"
+            tools:listitem="@layout/item_transection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+
+
+<!--        <RelativeLayout-->
+<!--            -->
+<!--            android:layout_marginTop="@dimen/_20sdp"-->
+<!--            android:padding="@dimen/_10sdp"-->
+<!--            android:background="@drawable/bg_strick"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="@dimen/_10sdp"-->
+<!--            android:layout_marginLeft="@dimen/_10sdp">-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/tv_boy"-->
+<!--                android:layout_width="@dimen/_90sdp"-->
+<!--                android:layout_height="@dimen/_90sdp"-->
+<!--                android:layout_marginLeft="-10dp"-->
+<!--                android:src="@drawable/casual_boy_floor" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:layout_toRightOf="@+id/tv_boy"-->
+<!--                android:fontFamily="@font/aquawax_pro_heavy_alt_version"-->
+<!--                android:letterSpacing="-0.01"-->
+<!--                android:text="@string/refer_n_earn"-->
+<!--                android:textColor="@color/text_lightwhite"-->
+<!--                android:textSize="@dimen/_16ssp" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/bt_reward"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="@dimen/_30sdp"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/challange_bt"-->
+<!--                android:fontFamily="@font/aquawax_pro_heavy_alt_version"-->
+<!--                android:paddingLeft="@dimen/_10sdp"-->
+<!--                android:paddingRight="@dimen/_10sdp"-->
+<!--                android:text="@string/reward"-->
+<!--                android:textColor="@color/text_lightwhite"-->
+<!--                android:textSize="@dimen/_10sdp" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/view_1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_below="@id/bt_reward"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:layout_toRightOf="@id/tv_boy"-->
+<!--                android:background="#1AFFFFFF" />-->
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/view_1"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:layout_toRightOf="@id/tv_boy"-->
+<!--                android:drawablePadding="@dimen/_7sdp"-->
+<!--                android:fontFamily="@font/aquawax_pro_medium_alt_version"-->
+<!--                android:letterSpacing="-0.01"-->
+<!--                android:lineSpacingExtra="@dimen/_3sdp"-->
+<!--                android:text="@string/invite_5_friends_and_you_both_nwill_get_btd_5_00"-->
+<!--                android:textColor="#B3FDFDFD"-->
+<!--                android:textSize="@dimen/_12ssp" />-->
+
+
+<!--        </RelativeLayout>-->
+
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_marginBottom="@dimen/_50sdp"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            android:padding="@dimen/_10sdp"-->
+<!--            android:background="@drawable/bg_strick"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_250sdp"-->
+<!--            android:layout_marginRight="@dimen/_10sdp"-->
+<!--            android:layout_marginLeft="@dimen/_10sdp">-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_offerimg"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_above="@id/tv_text"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:fontFamily="@font/aquawax_pro_heavy_alt_version"-->
+<!--                android:letterSpacing="-0.01"-->
+<!--                android:text="50% off on Dunkin’ Donuts"-->
+<!--                android:textColor="@color/text_lightwhite"-->
+<!--                android:textSize="@dimen/_16ssp" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/bt_offeroftheday"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="@dimen/_30sdp"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/challange_bt"-->
+<!--                android:fontFamily="@font/aquawax_pro_heavy_alt_version"-->
+<!--                android:paddingLeft="@dimen/_10sdp"-->
+<!--                android:paddingRight="@dimen/_10sdp"-->
+<!--                android:text="@string/offer_of_the_day"-->
+<!--                android:textColor="@color/text_lightwhite"-->
+<!--                android:textSize="@dimen/_10sdp" />-->
+
+
+<!--            <TextView-->
+<!--                android:gravity="center"-->
+<!--                android:id="@+id/tv_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                android:layout_marginRight="@dimen/_10sdp"-->
+<!--                android:drawablePadding="@dimen/_7sdp"-->
+<!--                android:fontFamily="@font/aquawax_pro_medium_alt_version"-->
+<!--                android:letterSpacing="-0.01"-->
+<!--                android:lineSpacingExtra="@dimen/_3sdp"-->
+<!--                android:text="@string/dolor_ut_ab_sit_ut_vero_maiores_autem_culpa_ncorrupti_reiciendis_aspernatur"-->
+<!--                android:textColor="#B3FDFDFD"-->
+<!--                android:textSize="@dimen/_12ssp" />-->
+
+
+<!--        </RelativeLayout>-->
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_transection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/bg_reward"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_20sdp">
+
+
+            <ImageView
+                android:id="@+id/iv_item"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentRight="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/wallet_img" />
+
+            <TextView
+                android:id="@+id/tv_transection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                android:text="Transactions"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_transection"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                android:text="View old and new transactions"
+                android:textColor="#4dFDFDFD"
+                android:textSize="@dimen/_12ssp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

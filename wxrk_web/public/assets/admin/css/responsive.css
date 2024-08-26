@@ -1,0 +1,73 @@
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .content-wrapper,
+    .sidebar-mini.sidebar-collapse .main-footer,
+    .sidebar-mini.sidebar-collapse .main-header {
+        margin-left: 100px !important;
+        margin-right: 20px;
+    }
+	.textMmd-right { text-align: right}
+}
+@media only screen and  (max-width: 1100px) {
+	
+	.login-bg { padding: 40px }
+	.login-btn { margin: 40px 0 -53px}
+}
+
+
+@media only screen and (max-width: 990px) {
+	
+	.login-bg { padding: 30px }
+	.login-foot { padding-left: 50px;}
+	.head-title h2 { font-size: 24px; }
+	.head-title h5 { font-size: 14px; }
+	.form-group .form-control  { font-size: 13px;}
+	.form-group label { font-size: 12px;}
+}
+ 
+
+@media screen and  (max-width: 767px) {
+	
+	.login-bg { padding: 30px }
+	.login-foot { padding-left: 7.5px;}
+	
+}
+
+@media screen and (max-width: 575px) {
+     
+	.login-bg { padding: 30px }
+    .head-title h2 { font-size: 20px; }
+	.head-title h5 { font-size: 13px; }
+	.form-group .form-control  { font-size: 12px;}
+	.form-group label { font-size: 11px;}
+	.login-logo { max-width: 230px; margin-bottom: 20px}
+	.forgetlink, .resendlin { font-size: 10px; padding-bottom: 2px;}
+	.login-foot a { font-size: 10px;  }
+	.login-foot p { font-size: 10px; }
+	
+	
+	
+	.btn-danger, .btn-success, .btn-outline-secondary, .custom-input[type="file"]::-webkit-file-upload-button, .btn-secondary, .btn-filter, .aprovebtn {  padding: 5px 12px; border-radius: 19px; font-size: 11px; }
+	.btn-inner, .btn-history, .btn-warning, .btn-info {  padding: 5px 13px; font-size: 11px; }
+	.formCard { padding: 0 }
+	.dashtable thead  tr th, .dashtable tbody tr td  {  font-size: 11px; }
+	.custom-search-inner { margin-top: 10px}
+	.noflex-wrap { flex-wrap: inherit; overflow: scroll}
+	.noflex-wrap1 { flex-wrap: inherit; }
+	.mobsnew-search input.form-control { height: 45px !important}
+	
+	.justify-content-mobbetween { justify-content: space-between; display: flex}
+	.addformaccordian { margin-bottom: 20px}
+	
+	.head-title.form-head h2 { font-size: 14px; }
+	.checkloistheadingnewdetails h4 { font-size: 13px; margin-bottom: 10px }
+	.checkloistheadingnewdetails .activechkbox label span { visibility:visible}
+	.checkloistheadingnewdetails .activechkbox [type="radio"].filled-in:checked+label:after { top: 0px; left: 1px;}
+
+	.checkloistheadingnewdetails .activechkbox [type="radio"].filled-in:not(:checked)+label:before, .checkloistheadingnewdetails .activechkbox [type="radio"].filled-in:checked+label:before {  width: 16px; height: 17px}
+	.checkloistheadingnewdetails .activechkbox [type="radio"]+label { height: 22px; line-height: 17px; font-size: 12px; padding-left: 22px}
+	
+	.checkloistheadingnewdetails input { font-size: 12px; margin-top: 10px}
+	
+	
+}

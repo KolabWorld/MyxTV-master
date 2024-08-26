@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_back_gradiant"
+        tools:context=".MainActivity">
+
+        <com.airbnb.lottie.LottieAnimationView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/wave_animation"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:background="@drawable/ic_x"
+            android:id="@+id/iv_logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_250sdp" />
+
+        <TextView
+            android:layout_marginTop="-30dp"
+            android:letterSpacing="-0.11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/iv_logo"
+            android:text="login via Blocto"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+            android:textSize="@dimen/_21ssp" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:id="@+id/rl_blocto"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            app:layout_constraintBottom_toBottomOf="parent"            android:layout_marginBottom="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_blockto_loginbg"
+            >
+
+
+            <RelativeLayout
+
+                android:layout_marginRight="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blockto_loginbg_white"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_blocto"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="@dimen/_55sdp"
+                    android:src="@drawable/ic_blocto_logo" />
+
+                <TextView
+                    android:id="@+id/tv_textlogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_toRightOf="@id/iv_blocto"
+                    android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                    android:gravity="center"
+                    android:letterSpacing="-0.11"
+                    android:text="Login via Blocto"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_17ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@id/tv_textlogin"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_toRightOf="@id/iv_blocto"
+                    android:fontFamily="@font/aquawax_pro_medium_alt_version"
+                    android:gravity="center"
+                    android:letterSpacing="-0.11"
+                    android:text="link your blocto wallet"
+                    android:textColor="#99343434"
+                    android:textSize="@dimen/_10ssp" />
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_text"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintWidth_percent="0.8"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            android:background="@drawable/bg_bottom_nav_bar"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_marginBottom="@dimen/_20sdp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:layout_marginTop="@dimen/_20sdp"-->
+<!--                android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                android:drawablePadding="@dimen/_5sdp"-->
+<!--                android:drawableLeft="@drawable/ic_vuesax_bulk_flash_circle"-->
+<!--                android:letterSpacing="-0.11"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/iv_logo"-->
+<!--                android:text="@string/what_is_blocto"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/aquawax_pro_heavy_alt_version"-->
+<!--                android:textSize="@dimen/_14ssp" />-->
+
+
+<!--            <TextView-->
+<!--                android:layout_marginRight="@dimen/_10sdp"-->
+<!--                android:layout_marginBottom="@dimen/_20sdp"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                android:drawablePadding="@dimen/_5sdp"-->
+<!--                android:letterSpacing="-0.11"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/iv_logo"-->
+<!--                android:text="Dolor ut ab sit. Ut vero maiores autem culpa corrupti reiciendis aspernatur. Sint blanditiis dignissimos ut non enim error.\n\n Ut vero maiores autem culpa corrupti reiciendis aspernatur. Sint blanditiis dignissimos ut non enim error."-->
+<!--                android:textColor="@color/white"-->
+<!--                android:gravity="left"-->
+<!--                android:fontFamily="@font/aquawax_pro_regular_alt_version"-->
+<!--                android:textSize="@dimen/_12ssp" />-->
+
+
+
+<!--        </LinearLayout>-->
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

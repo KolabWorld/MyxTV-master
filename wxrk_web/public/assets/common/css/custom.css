@@ -1,0 +1,322 @@
+/*** Common Css ***/
+
+.admintable tr th {
+    text-transform: uppercase;
+}
+
+.form-label-group>select {
+    background: url(../img/arrow-down.svg) no-repeat right 1rem center/.8rem .63rem #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #777777;
+    font-weight: 400;
+    line-height: 1.6;
+     
+    margin: 0 0 15px 0;
+}
+
+.modal-content {
+    border: 0;
+}
+
+
+/*** Srrvices Module CSS ****/
+
+.simpleEditor {
+    background: #EDEDED;
+    margin: 10px 0;
+    padding: 0 5px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.simpleEditor ul {
+    margin: 0;
+    padding: 0;
+}
+
+.simpleEditor ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.simpleEditor li a {
+    color: #172B4D;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.simpleEditor li a:hover {
+    color: #000000;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.uploadBtn {
+    padding: 6px 16px;
+    font-size: 12px;
+    border-radius: 0px !important;
+    box-shadow: none;
+    color: #333333 !important;
+    background-color: transparent !important;
+    border: 1px solid rgba(119,119,119,0.5) !important;
+    font-weight: 400; 
+	margin: 10px 0
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.uploadedDocBox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.uploadedDocBox img {
+    width: 100%;
+    box-shadow: 0px 10px 20px #00000033;
+    border-radius: 10px;
+}
+
+.delImage img {
+    width: auto !important;
+    box-shadow: none !important;
+    border-radius: 50px !important;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: #ffffff;
+}
+
+
+/** Complaint Module CSS ****/
+
+.complaint-card p.theme-text,
+.complaint-card-rec p.theme-text {
+    font-size: 14px;
+}
+
+.complaintHead {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.complaint-card-rec .card-header {
+    background: none;
+    border-color: #d1d1d1
+}
+
+.complaint-card-rec {
+    box-shadow: 0px 3px 6px #2C28281C;
+    border-radius: 10px;
+    border: none;
+    background: #172B4D !important;
+    margin-bottom: 25px
+}
+
+.complaint-card-rec p,
+.complaint-card-rec h5 {
+    color: #fff
+}
+
+.imgGallery {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: #f2f2f2;
+    margin-bottom: 15px;
+}
+
+.imgGallery img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.userAvatar {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.userAvatar img {
+    width: 100px;
+    height: 100px;
+}
+
+.smalldataBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 20px 80px #00000011;
+    border-radius: 10px;
+    height: 100%;
+    min-height: 150px;
+    color: #172B4D;
+    padding: 15px;
+}
+
+.smalldataBox h5 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.smalldataBox p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: normal;
+    text-align: center;
+}
+
+.smalldataBox:hover {
+    background: #172B4D;
+    color: #ffffff !important;
+}
+
+.smalldataBox:hover h5,
+.smalldataBox:hover p {
+    color: #ffffff !important;
+}
+
+.smalldataBox.active {
+    background: #172B4D;
+    color: #ffffff !important;
+}
+
+.smalldataBox.active h5,
+.smalldataBox.active p {
+    color: #ffffff !important;
+}
+
+
+/*----New CSS-----*/
+.allTitle h2 { margin-bottom: 0px; font-size: 24px; font-family: 'Playfair Display'; }
+.subTitle { font-family: 'Playfair Display';  }
+.btn, .playfair { font-family: 'Playfair Display' !important;  }
+.btn { text-transform: none !important }
+.theme-Ltext { color: #777777 }
+.theme-Dtext { color: #333333 }
+h3.card-title { font-weight: 400; font-size: 18px; color: #777777;  }
+h3.card-title strong { font-weight: 400; font-size: 18px; color: #777777;  }
+.card-body p.home-card-small { font-weight: 400; font-size: 12px; color: #333333; }
+.card-body p { font-weight: 400; font-size: 12px; color: #333333; }
+.card-header p { font-weight: 400; font-size: 12px; color: #333333; }
+.card-body .f-60.text-dark { line-height: 60px; margin-bottom: 15px }
+.marroh { margin-top: -5px }
+.filterarea .text-dark {color: #777777 !important }
+
+.upload-btn-wrapper2 {
+    position: relative;
+    /* overflow: hidden; */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.uploadBtn2 {
+    color: #333333;
+    font-size: 17px;
+    font-weight: normal !important;
+    font-family: 'Playfair Display';
+    border-color: #E3E7E8 !important;
+	height: auto;
+    padding: .7rem 0 .4rem 0;
+    margin: 0 0 .5rem 0;
+	border: none !important;
+	border-bottom:1px solid #E3E7E8 !important;
+	display: block; 
+	background: none;
+	width: 100%;
+	text-align: left;
+}
+
+.upload-btn-wrapper2 input[type=file] {
+    font-size: 10px;
+    position: absolute;
+    left: -87px;
+    top: 0px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.upload-right { position: absolute; right: 5px; font-size: 15px; top: 0px }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(119,119,119,0.5) !important;
+	 
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(119,119,119,0.5) !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(119,119,119,0.5) !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(119,119,119,0.5) !important;
+}
+
+.backbtnPanel .btn-outline-dark, .tableHead .btn-outline-dark { 
+    border: 1px solid #777777 !important
+}
+
+.img-close { position: absolute; top: -5px; right: -5px}
+.font-weight-Mbolder { font-weight: 700 }
+
+.myordersData .theme-Ltext.normal-line-height { line-height: 20px; font-size: 13px }
+.newnormal-line-height { line-height: 16px }
+
+.nav-sidebar .nav-link p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 6px !important;
+    margin-top: 4px;
+	color: #989898!important;
+}
+
+.nav-treeview .nav-link {
+    padding: 3px 15px;
+    margin-left: 33px;
+}
+
+.nav-treeview i {
+    width: 20px;
+    color: #989898;
+}
+
+.modal-body .btn { text-transform: uppercase !important}
+
+.delImageNew {
+    position: absolute;
+    right: -5px;
+    top: -10px;
+    background: #fff;
+    border-radius: 50%;
+} 

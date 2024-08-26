@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.outblock.fcl">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application>
+        <activity
+            android:name=".webview.WebViewActivity"
+            android:launchMode="singleTop"/>
+
+        <provider
+            android:name="io.outblock.fcl.lifecycle.FCLContentProvider"
+            android:authorities="io.outblock.fcl.context"
+            android:exported="false"/>
+    </application>
+</manifest>

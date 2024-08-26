@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:background="@drawable/splash_back_gradiant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="@dimen/_30sdp"
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ic_left_backarrow" />
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_30sdp"
+                android:id="@+id/ll_wallet"
+                android:gravity="center"
+                android:background="@drawable/wallet_bg"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+                    app:roundPercent="1"
+                    android:background="#0E326C"
+                    android:src="@drawable/ic_token_logo"
+                    android:id="@+id/iv_logo"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp" />
+
+
+                <TextView
+                    android:id="@+id/tvBalance"
+                    android:fontFamily="@font/dubai_dubstep"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@id/iv_user"
+                    app:layout_constraintLeft_toRightOf="@id/iv_user"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp"
+                    android:text="0.24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@id/ll_wallet"
+                android:orientation="vertical"
+                android:background="@drawable/bgcorner_img"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.constraintlayout.utils.widget.ImageFilterView
+                        android:id="@+id/iv_offerimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:background="@drawable/bgcorner_img"
+                        android:scaleType="centerCrop"
+                        app:roundPercent="0.3"
+                        app:srcCompat="@drawable/event" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+
+                        android:background="@drawable/bg_bottom_nav_bar"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.utils.widget.ImageFilterView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="#0E326C"
+                            android:src="@drawable/ic_token_logo"
+                            app:roundPercent="1" />
+
+
+                        <TextView
+                            android:id="@+id/tv_offerpice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/dubai_dubstep"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:text="0.24"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_15ssp"
+                            app:layout_constraintLeft_toRightOf="@id/iv_user"
+                            app:layout_constraintTop_toBottomOf="@id/iv_user"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_lowstockview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:background="@drawable/red_lowstock"
+                        android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:text="LOW STOCK"
+                        android:textColor="@color/text_lightwhite"
+                        android:textSize="@dimen/_10sdp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_below="@id/iv_offerimg"
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/tv_text"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                    android:letterSpacing="-0.01"
+                    android:text="ADIDAS"
+                    android:textColor="@color/text_lightwhite"
+                    android:textSize="@dimen/_16ssp" />
+
+
+
+
+                <TextView
+                    android:id="@+id/tvTextdes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:drawablePadding="@dimen/_7sdp"
+                    android:fontFamily="@font/aquawax_pro_medium_alt_version"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:text="@string/dolor_ut_ab_sit_ut_vero_maiores_autem_culpa_ncorrupti_reiciendis_aspernatur"
+                    android:textColor="#B3FDFDFD"
+                    android:textSize="@dimen/_10ssp" />
+
+                <View
+                    android:background="#1AFFFFFF"
+                   android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/view_phonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_phonenumber"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/tv_text"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                    android:letterSpacing="-0.01"
+                    android:text="Offer expires in"
+                    android:textColor="@color/text_lightwhite"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/tvremainig"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/tv_text"
+                    android:fontFamily="@font/dubai_dubstep_italic"
+                    android:letterSpacing="-0.01"
+                    android:text="17:55:20"
+                    android:textColor="@color/text_lightwhite"
+                    android:textSize="@dimen/_30ssp" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_copy"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/coupen_bg"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_promocode"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/tv_text"
+                        android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                        android:letterSpacing="-0.01"
+                        android:text="ADI003282381KD3610"
+                        android:textColor="@color/text_lightwhite"
+                        android:textSize="@dimen/_12ssp" />
+
+                         <TextView
+                             android:layout_marginBottom="@dimen/_15sdp"
+                             android:layout_marginLeft="@dimen/_15sdp"
+                             android:layout_marginRight="@dimen/_15sdp"
+                             android:gravity="center"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/tv_text"
+                        android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                        android:letterSpacing="-0.01"
+                        android:text="Tap here to copy the coupon code, use this at the checkout"
+                        android:textColor="@color/text_lightwhite50"
+                        android:textSize="@dimen/_10ssp" />
+
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_redeem"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:background="@drawable/redeem_bt"
+                    android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+
+                    android:text="REDEEM THIS OFFER"
+                    android:textColor="@color/text_lightwhite"
+                    android:textSize="@dimen/_17sdp" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

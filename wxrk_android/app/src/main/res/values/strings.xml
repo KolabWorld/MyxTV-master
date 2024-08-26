@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">MyxTV</string>
+    <string name="login_to_unplug">login to start earning</string>
+    <string name="use_this_account_on">Use this account on</string>
+    <string name="email">Email</string>
+    <string name="profile">Profile</string>
+    <string name="password">Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="use_another_account">Use Another Account</string>
+    <string name="you_re_1_step_away">You’re 1 step away</string>
+    <string name="from_the_awesomeness">from the awesomeness</string>
+    <string name="a_code_has_been_sent_to">A code has been sent to</string>
+    <string name="hours">hours</string>
+    <string name="min">min</string>
+    <string name="view_more">VIEW MORE</string>
+    <string name="daily_rewards">DAILY REWARDS</string>
+    <string name="_7_days_streak">7 days streak</string>
+    <string name="challenge">CHALLENGE</string>
+    <string name="stay_away_from_this_app_for_a_week_nand_win_3x_multiplier_t_c_applied"><![CDATA[Stay away from this app for a week \nand win 3x multiplier. T&C applied.]]></string>
+    <string name="refer_n_earn">Refer n Earn</string>
+    <string name="invite_5_friends_and_you_both_nwill_get_btd_5_00">Invite 5 friends and you both \nwill get BTD 5.00</string>
+    <string name="reward">REWARD</string>
+    <string name="upcoming_events">UPCOMING EVENTS</string>
+    <string name="offer_of_the_day">OFFER OF THE DAY</string>
+    <string name="dolor_ut_ab_sit_ut_vero_maiores_autem_culpa_ncorrupti_reiciendis_aspernatur">Dolor ut ab sit. Ut vero maiores autem culpa \ncorrupti reiciendis aspernatur.</string>
+    <string name="top_time_savers">Last 7 Days</string>
+    <string name="social_apps">Social apps</string>
+    <string name="utility_apps">Utility apps</string>
+    <string name="productivity_apps">Productivity apps</string>
+    <string name="app_via_data">App via data</string>
+    <string name="what_is_blocto">What is Blocto?</string>
+
+    <string name="enable_apps_monitor">Enable apps monitor</string>
+    <string name="grant_success">Grand permission successfully</string>
+    <string name="toast_permission">Please find \"AppsTimeline\" and grant the permission</string>
+    <string name="not_support">You device not support monitoring</string>
+    <string name="total">%1$s</string>
+    <string name="sec">sec</string>
+
+    <string name="by_continuing_i_confirm_that_i_have_nread_the_privacy_policy">
+    <font fgcolor='#ffffff' >By continuing, I confirm that I have \nread the</font> <font fgcolor='#2DBBDD' >Privacy Policy</font>
+</string>
+
+    <string name="send_another_code_after_30s">
+    <font fgcolor='#ffffff' >Send another code after </font>
+    </string>
+
+
+    <string name="wrong_phone_number">
+    <font fgcolor='#ffffff' >Wrong phone number? </font>
+    <font fgcolor='#2DBBDD' >Tap here </font><font fgcolor='#ffffff' >to change it</font>
+    </string>
+    <string name="send_me_the_code">SEND ME THE CODE</string>
+    <string name="to_verify_the_number">to verify the number</string>
+    <string name="verify">VERIFY</string>
+    <string name="your_phone_number">Your phone number</string>
+    <string name="let_s_get_to_know_on">Let’s get to know on</string>
+    <string name="first_name_basis">first name basis</string>
+    <string name="your_name">Your name</string>
+    <string name="next_step">NEXT STEP</string>
+    <string name="skip">SKIP</string>
+
+    <string name="editProfile">Edit Profile</string>
+    <string name="editImage">Edit Image</string>
+    <string name="updateProfile">Update Profile</string>
+    <string name="yourdob">Your date of Birth</string>
+    <string name="youremail">Your Email</string>
+
+    <string name="cxmmunity">CXMMUNITY</string>
+    <string name="getstarted">GET STARTED</string>
+    <string name="intro1">Earn the $CX token for watching your favorite streamer. Yes, it’s really that simple!</string>
+  <string name="WXRK">$CX</string>
+  <string name="intro2">When you come back, you can trade those $CX tokens for rewards! Hit the button to start earning $CX.</string>
+<string name="Reward">REWARDS</string>
+  <string name="intro3">You never know what rewards you’ll find, so stay engaged!</string>
+    <string name="today_s_ideal_time">Today\'s watch time</string>
+    <string name="insights">INSIGHTS</string>
+
+
+</resources>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:background="@drawable/splash_back_gradiant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                app:layout_constraintBottom_toBottomOf="@+id/ll_wallet"
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ll_wallet"
+                android:src="@drawable/ic_left_backarrow" />
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/ll_wallet"
+                android:gravity="center"
+                android:background="@drawable/wallet_bg"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+                    app:roundPercent="1"
+                    android:background="#0E326C"
+                    android:src="@drawable/ic_token_logo"
+                    android:id="@+id/iv_logo"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp" />
+
+
+                <TextView
+                    android:id="@+id/tvBalance"
+                    android:fontFamily="@font/dubai_dubstep"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@id/iv_user"
+                    app:layout_constraintLeft_toRightOf="@id/iv_user"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp"
+                    android:text="0.24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@id/ll_wallet"
+                android:orientation="vertical"
+                android:background="@drawable/bgcorner_img"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bg_strick"
+                    android:layout_height="@dimen/_240sdp">
+
+
+                    <androidx.constraintlayout.utils.widget.ImageFilterView
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200sdp"
+                        app:roundPercent="0.5"
+                        android:id="@+id/iv_banner"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintBottom_toTopOf="@id/ll"
+                        app:srcCompat="@drawable/event"/>
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:background="@drawable/bg_timebg"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/ll_time"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:textSize="@dimen/_25sdp"
+                            android:id="@+id/tv_date"
+                            android:fontFamily="@font/dubai_dubstep_italic"
+                            android:textColor="@color/white"
+                            android:text="29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/tv_month"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/aquawax_pro_bold_alt_version"
+                            android:textColor="@color/white"
+                            android:text="JULY"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:id="@+id/ll"
+                        android:background="@drawable/bg_event_bottombg"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:id="@+id/tv_eventname"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_time"
+                            android:textColor="@color/text_lightwhite"
+                            android:textSize="@dimen/_14ssp"
+                            android:text="July Beer Fest 2022"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                            />
+
+
+
+
+                        <TextView
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:id="@+id/tv_time_location"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_eventname"
+                            android:textColor="@color/text_lightwhite70"
+                            android:textSize="@dimen/_10ssp"
+                            android:text="FRI, JUL 29TH\nAustin, TX"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/aquawax_pro_medium_alt_version"
+                            />
+
+
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <View
+                    android:background="#1AFFFFFF"
+                   android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/view_phonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_phonenumber"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/tv_text"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                    android:letterSpacing="-0.01"
+                    android:text="Event expires in"
+                    android:textColor="@color/text_lightwhite"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:id="@+id/tvremainig"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/tv_text"
+                    android:fontFamily="@font/aquawax_pro_regular_alt_version"
+                    android:letterSpacing="-0.01"
+                    android:text="17:55:20"
+                    android:textColor="@color/text_lightwhite"
+                    android:textSize="@dimen/_20ssp" />
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

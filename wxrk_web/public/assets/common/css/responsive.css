@@ -1,0 +1,68 @@
+/* ---------------------------------- Responsive Media Styles ---------------------------------*/
+
+@media only screen and (min-width: 1500px) and (max-width: 1920px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1340px) {}
+
+
+/* Medium Device : 1280px */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* Tablet Device : 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .sel_all {
+        padding-left: 5px;
+    }
+}
+
+
+/* Medium : 647px */
+
+@media only screen and (max-width: 767px) {
+    .sel_all {
+        padding-left: 5px;
+    }
+}
+
+
+/* Small : 320px */
+
+@media screen and (max-width: 479px) {
+    .textM-right { text-align: left; }
+    .loginImg { height: auto; }
+    .adlogo { display: none !important; }
+    .allTitle h2 { font-size: 24px; }
+    .headpanel { min-width: 85px; }
+    .sel_all { padding: 0; }
+    .nonflex { display: inherit !important; }
+	.ordeRow1 { display: block }
+	.btn.btn-md.mb-0 { margin-bottom: 10px !important }
+	.site-footer .footer-heading { margin-top: 20px }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .textM-right {
+        text-align: left;
+    }
+    .loginImg {
+        height: auto;
+    }
+    .adlogo {
+        display: none !important;
+    }
+    .allTitle h2 {
+        font-size: 24px;
+    }
+    .headpanel {
+        min-width: 85px;
+    }
+    .sel_all {
+        padding: 0;
+    }
+    .nonflex {
+        display: inherit !important;
+    }
+}

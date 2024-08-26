@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/home_fragment"
+    android:id="@+id/navigation_views">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.wxrk.ui.fragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/offerlist_to_offerdetail"
+            app:destination="@id/offer_detailfragment"
+
+            />
+        <action
+            android:id="@+id/sponserlist_to_sponserads"
+            app:destination="@id/sponserads_fragment"
+
+            />
+       <action
+            android:id="@+id/home_to_profile"
+            app:destination="@id/profile_fragment"
+
+            />
+        <action
+            android:id="@+id/home_to_weekreport"
+            app:destination="@id/weekreport_fragment"
+
+            />
+          <action
+            android:id="@+id/home_to_walletfrag"
+            app:destination="@id/wallet_fragment"
+            />
+           <action
+            android:id="@+id/home_to_twitch"
+            app:destination="@id/twitch_fragment"
+            />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/twitch_fragment"
+        android:name="com.wxrk.ui.fragment.twitch.TwitchVideo_Fragment"
+        android:label="TwitchVideoFragment"
+        tools:layout="@layout/fragment_event" >
+        <action
+            android:id="@+id/twitchvideo_to_twitchdetail"
+            app:destination="@id/twitchdetail_fragment"
+            />
+        <action
+            android:id="@+id/home_to_walletfrag"
+            app:destination="@id/wallet_fragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/twitchdetail_fragment"
+        android:name="com.wxrk.ui.fragment.twitch.TwitchDetail_Fragment"
+        android:label="TwitchDetailFragment"
+        tools:layout="@layout/fragment_twitchdetail" >
+
+        <action
+            android:id="@+id/home_to_walletfrag"
+            app:destination="@id/wallet_fragment"
+
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.wxrk.ui.fragment.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" >
+
+        <action
+            android:id="@+id/profile_to_editprofile"
+            app:destination="@id/editprofile_fragment"
+            />
+        <action
+            android:id="@+id/home_to_walletfrag"
+            app:destination="@id/wallet_fragment"
+
+            />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/editprofile_fragment"
+        android:name="com.wxrk.ui.fragment.profile.ProfileEditFragment"
+        android:label="EditProfileFragment"
+        tools:layout="@layout/fragment_editprofile" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/weekreport_fragment"
+        android:name="com.wxrk.ui.fragment.transection.ViewMore_Fragment"
+        android:label="WeekReportFragment"
+        tools:layout="@layout/fragment_viewmore" >
+
+        <action
+            android:id="@+id/home_to_walletfrag"
+            app:destination="@id/wallet_fragment"
+
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sponserads_fragment"
+        android:name="com.wxrk.ui.fragment.Video_Sponser_Fragment"
+        android:label="SponsersFragment"
+        tools:layout="@layout/fragment_sponser_ads" >
+
+    </fragment>
+
+  <fragment
+        android:id="@+id/wallet_fragment"
+        android:name="com.wxrk.ui.fragment.transection.TopFiveTransections_Fragment"
+        android:label="WalletFragment"
+        tools:layout="@layout/fragment_wallet" >
+
+      <action
+          android:id="@+id/wallet_to_transection"
+          app:destination="@id/transection_fragment"
+
+          />
+    </fragment>
+
+  <fragment
+        android:id="@+id/homewallet_fragment"
+        android:name="com.wxrk.ui.fragment.transection.TopFiveTransections_Fragment"
+        android:label="WalletFragment"
+        tools:layout="@layout/fragment_wallet" >
+
+      <action
+          android:id="@+id/wallet_to_transection"
+          app:destination="@id/transection_fragment"
+
+          />
+    </fragment>
+
+ <fragment
+        android:id="@+id/transection_fragment"
+        android:name="com.wxrk.ui.fragment.transection.Transection_Fragment"
+        android:label="TransectionFragment"
+        tools:layout="@layout/fragment_ledger" >
+     <action
+         android:id="@+id/home_to_walletfrag"
+         app:destination="@id/wallet_fragment"
+
+         />
+    </fragment>
+
+
+  <fragment
+        android:id="@+id/offer_fragment"
+        android:name="com.wxrk.ui.fragment.offers.OfferFragment"
+        android:label="OfferFragment"
+        tools:layout="@layout/fragment_shop" >
+      <action
+          android:id="@+id/offerlist_to_offerdetail"
+          app:destination="@id/offer_detailfragment"
+
+          />
+      <action
+          android:id="@+id/home_to_walletfrag"
+          app:destination="@id/wallet_fragment"
+
+          />
+    </fragment>
+
+    <fragment
+        android:id="@+id/offer_detailfragment"
+        android:name="com.wxrk.ui.fragment.offers.OfferDetail_Fragment"
+        android:label="OfferDetailFragment"
+        tools:layout="@layout/fragment_offerdetail" >
+
+        <action
+            android:id="@+id/offerdetail_to_promocode"
+            app:destination="@id/promocode_fragment"
+
+            />
+
+        <action
+            android:id="@+id/home_to_walletfrag"
+            app:destination="@id/wallet_fragment"
+
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/promocode_fragment"
+        android:name="com.wxrk.ui.fragment.offers.RedeemOffer_Fragment"
+        android:label="PromoCOde"
+        tools:layout="@layout/fragment_offerpromocode" >
+
+        <action
+            android:id="@+id/home_to_walletfrag"
+            app:destination="@id/wallet_fragment"
+
+            />
+    </fragment>
+
+
+ <fragment
+        android:id="@+id/event_fragment"
+        android:name="com.wxrk.ui.fragment.event.EventFragment"
+        android:label="OfferFragment"
+        tools:layout="@layout/fragment_event" >
+        <action
+            android:id="@+id/evenlist_to_eventdetail"
+            app:destination="@id/eventdetail_fragment"
+
+            />
+     <action
+         android:id="@+id/home_to_walletfrag"
+         app:destination="@id/wallet_fragment"
+
+         />
+     <action
+         android:id="@+id/eventdetail_to_eventpromo"
+         app:destination="@id/eventpromocode_fragment"
+
+         />
+    </fragment>
+
+    <fragment
+        android:id="@+id/eventdetail_fragment"
+        android:name="com.wxrk.ui.fragment.event.EventDetail_Fragment"
+        android:label="EventDetail"
+        tools:layout="@layout/fragment_eventdetail" >
+        <action
+            android:id="@+id/home_to_walletfrag"
+            app:destination="@id/wallet_fragment"
+
+            />
+       <action
+            android:id="@+id/eventdetail_to_eventpromo"
+            app:destination="@id/eventpromocode_fragment"
+
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/eventpromocode_fragment"
+        android:name="com.wxrk.ui.fragment.event.RedeemEvent_Fragment"
+        android:label="EventpromoFragment"
+        tools:layout="@layout/fragment_eventpromocode" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profilelevel_fragment"
+        android:name="com.wxrk.ui.fragment.profile.ProfileLevelFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profilelevel" >
+        <action
+            android:id="@+id/home_to_walletfrag"
+            app:destination="@id/wallet_fragment"
+
+            />
+    </fragment>
+
+<fragment
+        android:id="@+id/member_fragment"
+        android:name="com.wxrk.ui.fragment.MemberFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_members" >
+    <action
+        android:id="@+id/home_to_walletfrag"
+        app:destination="@id/wallet_fragment"
+
+        />
+    </fragment>
+
+
+
+</navigation>

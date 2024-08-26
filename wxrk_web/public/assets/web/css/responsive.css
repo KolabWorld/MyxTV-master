@@ -1,0 +1,218 @@
+/* ---------------------------------- Responsive Media Styles ---------------------------------*/
+
+
+
+@media (min-width: 1200px) {
+	
+	.container-productdetail { max-width: 1200px}
+	 
+}
+
+ 
+
+@media only screen and (min-width: 769px) {
+	 
+	 .tophead .tophead-right .dropdown-menu { display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0; top:180%;  }
+	.tophead .tophead-right  .dropdown-toggle:hover .dropdown-menu { transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+	 
+	 .navbar .nav-item .dropdown-menu {  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0; top: 180%  }  
+	.navbar .nav-item:hover .dropdown-menu { transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }  
+
+}
+
+
+
+
+
+/* Medium : 647px */
+
+@media only screen and (max-width: 767px) {
+     
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+     
+}
+
+/* Small : 320px */
+
+@media screen and (max-width: 575px) {
+	.moblogo img { width: 100%;}
+	.moblogo { padding-left: 0;}
+	.btn-login { font-size: 10px; padding: 5px 10px; font-weight: 400; }
+	.send-btn { font-size: 11px !important; padding: 9px 11px ; }
+	.top-banner h3 { 
+		font-size: 20px; 
+		padding-top: 10px;
+	}
+	.top-banner p { 
+		font-size: 11px;
+		line-height: 17px;
+	}
+	.search-sec {  font-size: 12px; padding:10px;}
+	.top-banner h5 { 
+		font-size: 13px;
+		margin-top: 10px;
+	}
+	.top-img { margin-top: -30px;}
+	.top-box img { height: 45px;}
+	.top-box { padding: 10px; box-shadow: 0px 4px 20px rgb(0 0 0 / 10%); margin-bottom: 15px;}
+	.top-box p { font-size: 12px; margin: 10px 0 0; }
+	.tophead-content h4 { font-size: 17px; margin-bottom: 5px;}
+	.tophead-content p {
+		font-size: 12px;
+	}
+	.product-img { height: 120px;}
+	.product p { font-size: 12px;}
+	.product-layer { height: 121px;}
+	.owl-dot { height: 3px; }
+	.interact { width: 70px; height: 70px; padding: 0; line-height: 70px; }
+	.ineract2 img {  height: 30px; }
+	.noflexwrap { flex-wrap: inherit; overflow-x: scroll;}
+	.doctors { width: 40px; height: 40px; line-height: 40px;}
+	.doctors2 img { height: 15px;}
+	.arrow_box {
+		padding: 15px;
+	}
+	.arrow_box p { 
+		font-size: 12px;
+		margin-bottom: 0;
+	}
+	.user-content h5 { font-size: 13px; padding-left: 0; }
+	.user-content p, .mobile-content p { font-size: 12px; padding-left: 0; }
+	.users-pic {
+		width: 40px;
+		height: 40px; line-height: 40px }
+	.users-pic2 img { height: 16px;}
+	
+	.mobile-content {  text-align: center; margin-top: 20px;}
+	.mobile-content h3 { font-size: 18px;  }
+	.mobile-right h4 { font-size: 14px; text-align: center; }
+	.mobile-right .search-sec { height: 35px;}
+	.downloadappimg p { font-size: 13px; }
+	.downloadappimg img { height: 33px;   }
+	.downloadappimg { margin-bottom: 20px;}
+	.footcontent ul li { font-size: 12px; margin-top: 8px;}
+	.footcontent span, .footcontent p { font-size: 12px;}
+	.footcontent i { margin-bottom: 10px;}
+	.footcontent img { height: 55px; }
+	.copy-right ul { text-align: center;}
+	.copy-right p { text-align: center !important; margin-top:5px; font-size: 11px;}
+	.socialmedimob { margin-bottom: 20px;}
+	.socialmedimob p { margin-top: 0;}
+
+
+	/*---*/
+	.pagehead-heading h4 {margin-bottom: 0px;}
+	.doctor-sectioncontent h3{font-size: 13px;}
+	.doctor-sectioncontent p {font-size: 10px;}
+	.doctor-sectioncontent h4{font-size: 11px;}
+	.call-btn {padding: 2px 16px; font-size: 12px;}
+	.clincs p {font-size: 12px;}
+	.pagehead-heading h4 {font-size: 12px;}
+
+	.child-sec{font-size: 12px;}
+
+.pre-button{ font-size: 12px;}
+.page-input{ height: 25px; font-size: 12px;}
+
+.doctor-sectionimg{width: 100%; height: 42px;}
+.doctor-sectionimg img{width: 100%; height: 100%; object-fit: cover; object-position: top;}
+
+/*---*/
+.about-box{ padding: 15px;}
+.about-box p{ font-size: 11px; margin-top: 0px;}
+.about-box h5{ font-size: 14px;}
+.about-box h6{  font-size: 11px;}
+
+
+.about-clinic {padding: 25px 20px;}
+.about-clinic h2 {font-size: 24px;}
+.about-clinic p {font-size: 11px;}
+.about-cliniccontent img {height: 50px;}
+.about-cliniccontent p{font-size: 12px;}
+
+/*--*/
+.contact-mainsection{padding: 0px 20px 20px 20px;}
+.contact-sec h2 {font-size: 12px;}
+.contact-sec p {font-size: 11px;}
+.contact-mainsection h4 {font-size: 16px; padding: 3px;}
+.contact-input{ font-size: 12px;}
+.contact-map h3 {font-size: 13px; padding-top: 15px; padding-left: 20px;}
+.contact-map p {font-size: 12px; padding-left: 20px;}
+.submit-btn{font-size: 14px; padding: 6px 30px;}
+
+.contact-mainsection p{margin-bottom: 0px;}
+.select-inputcont {color: #909090 !important; font-size: 12px;}
+.iframecontact-map{ height: 100%; width: 100%; border-top-right-radius: 0px;  border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;}
+
+.login-box {padding: 40px 20px;}
+.login-box .border-right{border-right: none !important;}
+.login-box h6 {font-size: 12px; margin-top: 10px;}
+.login-box h5 {font-size: 12px;  margin-top: 10px; margin-bottom: 0px;}
+.login-box{margin-bottom: 20px;}
+.register-label{font-size: 12px;}
+
+.term-section h6{ font-size: 12px;}
+.term-section h6:first-child{margin-top: 0px;}
+.term-section p{ font-size: 12px; }
+.appointment-sec2 {padding: 6px;}
+
+.cancel-btn {font-size: 11px; padding: 6px 30px;}
+.call-btn2{font-size: 11px; padding: 6px 30px;}
+.appointment-sec2 .submit-btn{font-size: 11px; padding: 6px 30px; }
+.doctor-sectionbox{padding: 12px;}
+.appoint-ratedashed{display: block;}
+
+.fill-detail p{font-size: 12px;}
+.succses-paybox-left ul li{font-size: 12px;}
+.succses-paybox-right ul li{font-size: 12px;}
+
+.about-sectionimg{width: 100%; height: 58px; margin-top: -15px; margin-left: -15px; }
+
+.uploadBtn {font-size: 11px; padding: 4px 12px;}
+[type="radio"]:not(:checked)+label, [type="radio"]:checked+label {
+    font-size: 12px;
+    margin-right: 9px;
+}
+
+
+
+.account-right h3{font-size: 14px;  padding: 10px;}
+.account-right h1{font-size: 14px;  padding: 10px;}
+.account-right .account-right-cont h5{font-size: 12px;}
+.account-right .account-right-cont h6{font-size: 15px;}
+.account-right-cont h4{font-size: 14px;}
+.account-right-cont p {font-size: 11px;}
+
+.account-right-cont h2 {font-size: 11px; margin-top: 10px;}
+.account-right .account-right-cont .uploadBtn {font-size: 13px;}
+.account-right-cont .Statistics-bordernone {border-right: none !important;}
+
+.upcoming-sec h3 {font-size: 11px; padding: 0px;}
+.upcoming-sec p {font-size: 12px;}
+
+.reviews-box h6 {font-size: 10px;}
+.reviews-box h5 {font-size: 11px;}
+.reviews-box p{font-size: 12px;}
+.edit-input{font-size: 11px; padding: 0.375rem 0.50rem;}
+.wallet h6 {font-size: 13px; padding-top: 10px; padding-left: 10px;}
+
+
+.patient-details h3{padding: 0px;}
+
+.tophead p {font-size: 12px;}
+.account-right .account-right-cont .report-pdf h6 {font-size: 14px;}
+
+.attend-top h6 {font-size: 12px; margin-top: 5px;}
+.attend-top p {font-size: 12px; text-align: justify; margin-top: 5px; margin-bottom: 5px;}
+.attend-patient-details .brief-summary{border-right: none !important;}
+.Recommendation-box{margin: 8px 13px 8px 13px;}
+
+.content-table{overflow: scroll;}
+
+}
+
+@media (min-width: 320px) and (max-width: 440px) {
+	 
+}

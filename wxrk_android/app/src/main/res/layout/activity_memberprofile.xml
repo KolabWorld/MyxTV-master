@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:background="@drawable/splash_back_gradiant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:padding="@dimen/_10sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ic_left_backarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_wallet"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                android:gravity="center"
+                android:background="@drawable/wallet_bg"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+                    app:roundPercent="1"
+
+                    android:background="#0E326C"
+                    android:src="@drawable/ic_token_logo"
+                    android:id="@+id/iv_logo"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp" />
+
+
+                <TextView
+                    android:fontFamily="@font/dubai_dubstep"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@id/iv_user"
+                    app:layout_constraintLeft_toRightOf="@id/iv_user"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp"
+                    android:text="0.24"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_profile"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_wallet"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_centerInParent="true"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/profile_animation_large" />
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+                   android:layout_centerInParent="true"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    app:srcCompat="@drawable/intro_x"
+                    app:roundPercent="1"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:id="@+id/iv_user" />
+
+
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rl_profile"
+                android:id="@+id/ll_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:background="@drawable/bg_bottom_nav_bar"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:background="#0E326C"
+                    android:src="@drawable/ic_token_logo"
+                    app:roundPercent="1" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/dubai_dubstep"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="0.24"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    app:layout_constraintLeft_toRightOf="@id/iv_user"
+                    app:layout_constraintTop_toBottomOf="@id/iv_user"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_infocard"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/bg_bottom_nav_bar">
+
+
+                <TextView
+                    android:id="@+id/tv_textdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                    android:gravity="center_vertical"
+                    android:letterSpacing="-0.09"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:text="Date"
+                    android:textColor="@color/text_lightwhite"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_textdate"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/aquawax_pro_regular_alt_version"
+                    android:gravity="left"
+                    android:letterSpacing="-0.11"
+                    android:lineSpacingExtra="10dp"
+                    android:text="29th July 2022"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+
+                <TextView
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/tv_texttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                    android:gravity="center_vertical"
+                    android:letterSpacing="-0.09"
+                    android:text="Time"
+                    android:textColor="@color/text_lightwhite"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_textdate"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/aquawax_pro_regular_alt_version"
+                    android:gravity="left"
+                    android:letterSpacing="-0.11"
+                    android:lineSpacingExtra="10dp"
+                    android:text="29th July 2022"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+
+                <TextView
+                    android:id="@+id/tv_textvenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_date"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                    android:gravity="center_vertical"
+                    android:letterSpacing="-0.09"
+                    android:text="Venue"
+                    android:textColor="@color/text_lightwhite"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <TextView
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:id="@+id/tv_venu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_textvenu"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/aquawax_pro_regular_alt_version"
+                    android:gravity="left"
+                    android:letterSpacing="-0.11"
+                    android:lineSpacingExtra="10dp"
+                    android:text="ABC Complex"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/tv_level"
+                android:textColor="#B3FDFDFD"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                android:textSize="@dimen/_14sdp"
+                android:text="Level 1"
+                app:layout_constraintTop_toBottomOf="@id/rl_infocard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+                <TextView
+                    android:id="@+id/tv_levelname"
+                android:textColor="@color/text_lightwhite"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                android:textSize="@dimen/_25sdp"
+                android:text="FRESHMAN"
+                app:layout_constraintTop_toBottomOf="@id/tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/tv_levelname"
+                app:layout_constraintStart_toStartOf="@id/tv_levelname"
+                android:id="@+id/tv_description"
+                android:textColor="#B3FDFDFD"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/aquawax_pro_heavy_alt_version"
+                android:textSize="@dimen/_12sdp"
+                android:text="Total idle time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                app:layout_constraintStart_toStartOf="@id/tv_levelname"
+                app:layout_constraintRight_toLeftOf="@id/iv_animation"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_description"
+                android:textColor="#2DBBDD"
+                android:textSize="@dimen/_12ssp"
+                android:text="14h : 29m : 15s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aquawax_pro_bold_alt_version"
+                android:drawablePadding="@dimen/_5sdp" />
+
+
+
+
+            <ImageView
+                app:layout_constraintTop_toBottomOf="@id/rl_infocard"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:id="@+id/iv_animation"
+                android:layout_marginRight="-50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:src="@drawable/profile_bottomimage"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
